@@ -1,72 +1,58 @@
-<!--
-El archivo "index.html" deberá contener la estructura básica vista en clase (header, nav, main, footer) que deberá incluirse igual a un segundo archivo en el mismo nivel (no hacer directorios-carpetas). El segundo archivo debe llamarse "acercade.html". El header debe incluir el título de la página conteniendo nombre y apellido e indicando que es la página personal. En acercade.html debe incluirse una breve biografía y una foto, no tiene por qué ser la del alumno pero es recomendable que así sea. Las fotos pueden enlazarse a sitios externos o guardarla en un subdirectorio llamado img/. El footer debe contener información de copyright y la dirección de la universidad o el nodo correspondiente.
-
-Nav debe enlazar a Inicio ("index.html") y Acerca de ("acercade.html) al menos, puede añadir más enlaces de desearlo.
-
-Por último, enlazar el mismo archivo CSS con los estilos básicos para dar un primer formato a sus páginas html. El archivo debe estar en el mismo directorio base de sus páginas.
-
-4. Configurar GitHub Pages
-
-- Ir a la pestaña "Settings" del repositorio.
-
-- Desplazar hacia abajo hasta encontrar la sección "Pages".
-
-- En "Source", seleccionar la rama desde la cual desplegar tu sitio (normalmente `main` o `master`) y seleccionar la carpeta raíz (`/`) donde están tus archivos.
-
-- Hacer clic en "Save".
-
-5. Acceder a tu página web
-
-Después de unos minutos, tu sitio estará disponible en "http://<tu_usuario>.github.io" (o el nombre que elegiste para el repositorio). Se puede acceder a él desde cualquier navegador.
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Acerca de Marcelo Andreola</title>
 </head>
 <body>
-    <header>
-        <h1>Marcelo Andreola</h1>
-        <h2>Pagina personal</h2>
-        <img src="./img/imagen_usuario.avif" alt="imagen usuario" class="imagen_usuario">
-    </header>
+    <header class="header_acerca_de_preguntas">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./preguntas.html">Preguntas</a></li>
+                <li><a href="./juego_preguntas.html">Juego de Preguntas</a></li>
+                <li><a href="https://web.curza.uncoma.edu.ar/">Página del CURZA</a></li>
+    
+            </ul>
+        </nav>
+        </section>
+                <h1>Pagina personal Marcelo Andreola</h1>
+                <img src="./img/logo_usuario_1.webp" alt="imagen de logo de usuario" class="img_usuario_logo_curza">
+        <section>
 
+    </header>    
 
+    <main>
+        <h3>Biografía</h3>
+        <p>Hola, soy Marcelo, estudiante de programación web en la Universidad del Comahue.</p>
+        <p>Experiencia: Tengo experencia en html, css, boostrap en lo que es front-end con algunos proyectos personales como el de una pagina web para un gimnasio donde use boostrap y algunas cosas de css para poder hacer mas responsiva la pagina como los media queries. Pero la parte que mas me interesa es el back-end que tengo experiencia con mysql, phpmyadmin y con la parte de logica con java poo y python poo con algunos proyectos personales como con java poo en netbeans y phpmyadmin un programa de veterinaria donde tenia que registrar al dueño, el tipo de animal, fecha de ingreso, precio de la atencion y con python un programa de una libreria donde se registra un usuario con nombre, apellido, contraseña y email y por otro lado que se puedan subir los libros con su nombre, autor, fecha y si estan disponibles y al final entre esos dos programas poder prestarle los libros disponibles al usuario en la cual use python poo, mysql y una libreria de python que se llama tkinter. Ademas de todo esto uso github y git bash con comandos para poder subir estos programas a un respositorio</p>
+    </main>
+    <aside>
+        <p>La imagen del CURZA fue obtenida de una fuente pública en Internet.</p>
+        <a href="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">logo del usuario</a>
+    </aside>
     <footer>
         <section>
             <h2>Contacto</h2>
             <address>
-                <p>Marcelo Andreola</p>
-                <p>email: <a href="#">marceloandreolaa180@gmail.com</a></p>
+                <p>Email: <a href="#">marceloandreolaa180@gmail.com</a></p>
             </address>
-        </section>
-        <section>
-            <h2>Universidad del comahue</h2>
-            <p>Direccion: Monseñor Esandi y Ayacucho, 8500, Viedma, Río Negro, Argentina</p>
         </section>
         <nav>
             <ul>
-                <li>
-                    <a href="./preguntas.html">Preguntas</a>
-                </li>
-                <li>
-                    <a href="./juego_preguntas.html">Juego preguntas</a>
-                </li>
-                <li>
-                    <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
-                </li>
-                <li>
-                    <a href="./acerca_de.html">Acerca de</a>
-                </li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./preguntas.html">Preguntas</a></li>
+                <li><a href="./juego_preguntas.html">Juego de Preguntas</a></li>
+                <li><a href="https://web.curza.uncoma.edu.ar/">Página del CURZA</a></li>
+    
             </ul>
         </nav>
 
-
+        <section>
+            <p>&copy; 2024 Marcelo Andreola. Todos los derechos reservados.</p>
+        </section>
     </footer>
-
 </body>
 </html>

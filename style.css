@@ -43,21 +43,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-figure {
-    background-color: antiquewhite;
-    border: 2px solid aquamarine;
-    border-radius: 8px;
-    padding-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    text-align: center;
-}
-
-figure img {
-    max-width: 100%;
-}
-
 aside {
     background-color: antiquewhite;
     border-left: 4px solid #007bff;
@@ -77,24 +62,20 @@ aside {
 
 }
 
-.Enunciado {
-    background-color: antiquewhite;
-    border: 2px solid aquamarine;
-    border-radius: 8px;
-    padding-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
- 
-}
-
 .texto_enunciado {
     padding-left: 1rem;
 }
 
-.imagen_usuario {
-    width: 10%;
+.img_usuario_logo_curza {
+    width: 10rem;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 10rem; 
+}
+
+.header_acerca_de_preguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    padding: 2rem 0;
 }
