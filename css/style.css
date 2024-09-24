@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    background-color: gainsboro;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5rem;
+  
+}
+
+
+header {
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+}
+
+footer {
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+figure {
+    background-color: antiquewhite;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
+    padding-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+aside {
+    background-color: antiquewhite;
+    border-left: 4px solid #007bff;
+    padding: 1rem;
+    margin: 20px 0;
+}
+
+.experiencia_prog_web {
+    background-color: antiquewhite;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
+    padding-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.Enunciado {
+    background-color: antiquewhite;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
+    padding-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ 
+}
+
+.texto_enunciado {
+    padding-left: 1rem;
+}
+
+.imagen_usuario {
+    width: 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+}

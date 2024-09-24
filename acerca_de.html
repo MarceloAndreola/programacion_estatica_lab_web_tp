@@ -1,0 +1,72 @@
+<!--
+El archivo "index.html" deberá contener la estructura básica vista en clase (header, nav, main, footer) que deberá incluirse igual a un segundo archivo en el mismo nivel (no hacer directorios-carpetas). El segundo archivo debe llamarse "acercade.html". El header debe incluir el título de la página conteniendo nombre y apellido e indicando que es la página personal. En acercade.html debe incluirse una breve biografía y una foto, no tiene por qué ser la del alumno pero es recomendable que así sea. Las fotos pueden enlazarse a sitios externos o guardarla en un subdirectorio llamado img/. El footer debe contener información de copyright y la dirección de la universidad o el nodo correspondiente.
+
+Nav debe enlazar a Inicio ("index.html") y Acerca de ("acercade.html) al menos, puede añadir más enlaces de desearlo.
+
+Por último, enlazar el mismo archivo CSS con los estilos básicos para dar un primer formato a sus páginas html. El archivo debe estar en el mismo directorio base de sus páginas.
+
+4. Configurar GitHub Pages
+
+- Ir a la pestaña "Settings" del repositorio.
+
+- Desplazar hacia abajo hasta encontrar la sección "Pages".
+
+- En "Source", seleccionar la rama desde la cual desplegar tu sitio (normalmente `main` o `master`) y seleccionar la carpeta raíz (`/`) donde están tus archivos.
+
+- Hacer clic en "Save".
+
+5. Acceder a tu página web
+
+Después de unos minutos, tu sitio estará disponible en "http://<tu_usuario>.github.io" (o el nombre que elegiste para el repositorio). Se puede acceder a él desde cualquier navegador.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Marcelo Andreola</h1>
+        <h2>Pagina personal</h2>
+        <img src="./img/imagen_usuario.avif" alt="imagen usuario" class="imagen_usuario">
+    </header>
+
+
+    <footer>
+        <section>
+            <h2>Contacto</h2>
+            <address>
+                <p>Marcelo Andreola</p>
+                <p>email: <a href="#">marceloandreolaa180@gmail.com</a></p>
+            </address>
+        </section>
+        <section>
+            <h2>Universidad del comahue</h2>
+            <p>Direccion: Monseñor Esandi y Ayacucho, 8500, Viedma, Río Negro, Argentina</p>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./preguntas.html">Preguntas</a>
+                </li>
+                <li>
+                    <a href="./juego_preguntas.html">Juego preguntas</a>
+                </li>
+                <li>
+                    <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
+                </li>
+                <li>
+                    <a href="./acerca_de.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </footer>
+
+</body>
+</html>
