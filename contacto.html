@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header_contacto">
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./preguntas.html">Preguntas</a>
+                </li>
+                <li>
+                    <a href="./juego_preguntas.html">Juego preguntas</a>
+                </li>
+                <li>
+                    <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
+                </li>
+                <li>
+                    <a href="./acerca_de.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <form id="contacto-form">
+            <label for="nombre">Nombre (máx 20 caracteres)</label>
+            <input type="text" id="nombre" name="nombre" maxlength="20" required>
+    
+            <label for="apellido">Apellido (máx 20 caracteres)</label>
+            <input type="text" id="apellido" name="apellido" maxlength="20">
+    
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54912345678" onfocus="this.placeholder=''" onblur="this.placeholder='Ej: +54912345678'">
+    
+            <label for="edad">Edad (entre 16 y 120 años)</label>
+            <input type="number" id="edad" name="edad" min="16" max="120">
+    
+            <label for="direccion">Dirección</label>
+            <textarea id="direccion" name="direccion" rows="3"></textarea>
+    
+            <label for="provincia">Provincia</label>
+            <input list="provincias" id="provincia" name="provincia">
+            <datalist id="provincias">
+                <option value="Chubut">
+                <option value="Río Negro">
+                <option value="Neuquén">
+                <option value="Tierra del Fuego">
+                <option value="Santa Cruz">
+            </datalist>
+    
+            <label for="codigo_postal">Código Postal (Formato: A1234ABC)</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" pattern="[A-Z]{1}[0-9]{4}[A-Z]{3}" placeholder="A1234ABC">
+    
+            <label>Método preferido de contacto:</label>
+            <div class="radio-group">
+                <input type="radio" id="contacto_email" name="metodo_contacto" value="correo_electronico" checked>
+                <label for="contacto_email">Correo electrónico</label>
+    
+                <input type="radio" id="contacto_postal" name="metodo_contacto" value="correo_postal">
+                <label for="contacto_postal">Correo postal</label>
+    
+                <input type="radio" id="contacto_telefono" name="metodo_contacto" value="telefono">
+                <label for="contacto_telefono">Teléfono</label>
+            </div>
+    
+            <label>Suscripciones (puede elegir más de una):</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="suscripcion_noticias" name="suscripcion[]" value="noticias">
+                <label for="suscripcion_noticias">Noticias</label>
+    
+                <input type="checkbox" id="suscripcion_promociones" name="suscripcion[]" value="promociones">
+                <label for="suscripcion_promociones">Promociones</label>
+    
+                <input type="checkbox" id="suscripcion_alertas" name="suscripcion[]" value="alertas" checked>
+                <label for="suscripcion_alertas">Alertas</label>
+    
+                <input type="checkbox" id="suscripcion_eventos" name="suscripcion[]" value="eventos">
+                <label for="suscripcion_eventos">Eventos</label>
+            </div>
+    
+            <button type="submit">Cargar</button>
+        </form>
+    <section class="section_table">
+        <h2>Datos ingresados</h2>
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Dirección</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Provincia</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Código Postal</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Método de Contacto</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Suscripciones</td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+        <footer>
+            <section>
+                <h2>Contacto</h2>
+                <address>
+                    <p>Marcelo Andreola</p>
+                    <p>email: <a href="#">marceloandreolaa180@gmail.com</a></p>
+                </address>
+            </section>
+            <section>
+                <h2>Universidad del comahue</h2>
+                <p>Direccion: Monseñor Esandi y Ayacucho, 8500, Viedma, Río Negro, Argentina</p>
+            </section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./preguntas.html">Preguntas</a>
+                    </li>    
+                    <li>
+                        <a href="./juego_preguntas.html">Juego preguntas</a>
+                    </li>
+                    <li>
+                        <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
+                    </li>
+                    <li>
+                        <a href="./acerca_de.html">Acerca de</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <p>&copy; 2024 Marcelo Andreola. Todos los derechos reservados.</p>
+            </section>
+        </footer>
+    
+
+</body>
+</html>

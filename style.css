@@ -22,6 +22,10 @@ header {
     padding-left: 0.5rem;
 }
 
+.header_contacto {
+    margin-bottom: 3rem;
+}
+
 footer {
     background-color: aquamarine;
     border: 2px solid black;
@@ -78,4 +82,58 @@ aside {
     justify-content: space-evenly;
     margin: 2rem 0;
     padding: 2rem 0;
+}
+
+
+/*
+############### FORMULARIO ################ 
+*/
+
+form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    border-radius: 1rem;
+    max-width: 70rem;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.ayuda {
+    color: #999;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.section_table {
+    margin: 5rem 0;
 }
