@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Preguntas</title>
+    <title>Juego de preguntas</title>
 </head>
 <body>
-    <header class="header_acerca_de_preguntas">
-        <nav>
-            <ul>
+    <header class="header_container">
+        <nav class="nav_principal">
+            <ul class="ul_inicial">
                 <li>
                     <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./juego_preguntas.html">Juego preguntas</a>
                 </li>
                 <li>
                     <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
@@ -27,19 +24,18 @@
                 </li>
             </ul>
         </nav>
-        <h1>Universidad del comahue</h1>
-        <img src="./img/logo_curza.jpeg" alt="imagen del curza" class="img_usuario_logo_curza">
+            <h1 class="main_text">Preguntas</h1>
+            <img src="./img/logo_curza.jpeg" alt="imagen del curza" class="img_usuario_logo_curza">
     </header>
-    <section>
-        <h2>Juego de preguntas</h2>
-        <a href="./juego_preguntas.html">Enlace: Juego de preguntas</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta cupiditate eius, illum ducimus dolorum id enim laborum impedit error facilis neque quae itaque, unde, placeat qui architecto nulla! Quod?</p>
+    <section class="Enunciado">
+        <h2 class="texto_enunciado">Enunciado</h2>
+        <ol>
+            <li>Respuesta</li>
+            <li>Respuesta</li>
+            <li>Respuesta</li>
+            <li>Respuesta</li>
+        </ol>
     </section>
-
-    <aside>
-        <p>La imagen del CURZA fue obtenida de una fuente pública en Internet.</p>
-        <a href="https://admin.curza.uncoma.edu.ar/wp-content/uploads/2021/09/Unco-banner.jpeg">link imagen logo del curza</a>
-    </aside>
 
     <footer>
         <section>
@@ -59,9 +55,6 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./juego_preguntas.html">Juego preguntas</a>
-                </li>
-                <li>
                     <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
                 </li>
                 <li>
@@ -73,6 +66,13 @@
             <p>&copy; 2024 Marcelo Andreola. Todos los derechos reservados.</p>
         </section>
     </footer>
+    <section>
+        <a href="#" class="scroll-to-top">
+            <div class="circle">
+                <span class="arrow">&uarr;</span>
+            </div>
+        </a>
+    </section>
 
 </body>
 </html>

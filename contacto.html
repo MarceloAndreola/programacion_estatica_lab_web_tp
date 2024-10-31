@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,14 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header class="header_contacto">
-        <h1>Contacto</h1>
-        <nav>
-            <ul>
+    <header class="header_container">
+        <nav class="nav_principal">
+            <ul class="ul_inicial">
                 <li>
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
                     <a href="./preguntas.html">Preguntas</a>
-                </li>
-                <li>
-                    <a href="./juego_preguntas.html">Juego preguntas</a>
                 </li>
                 <li>
                     <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
@@ -28,9 +24,11 @@
                 </li>
             </ul>
         </nav>
+        <h1 class="main_text">Contacto</h1>
+        <img src="./img/logo_curza.jpeg" alt="imagen del curza" class="img_usuario_logo_curza"> 
     </header>
 
-        <form id="contacto-form">
+        <form>
             <label for="nombre">Nombre (máx 20 caracteres)</label>
             <input type="text" id="nombre" name="nombre" maxlength="20" required>
     
@@ -94,89 +92,102 @@
     <section class="section_table">
         <h2>Datos ingresados</h2>
         <table>
-            <tr>
-                <th>Campo</th>
-                <th>Valor</th>
-            </tr>
-            <tr>
-                <td>Nombre</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Apellido</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Teléfono</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Edad</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Dirección</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Provincia</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Código Postal</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Método de Contacto</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Suscripciones</td>
-                <td></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>        
+                <tr>
+                    <td>Nombre</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Provincia</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Código Postal</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Método de Contacto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Suscripciones</td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">* Datos ingresados en el formulario de contacto.</td>
+                </tr>
+            </tfoot>
         </table>
     </section>
-
-        <footer>
-            <section>
-                <h2>Contacto</h2>
-                <address>
-                    <p>Marcelo Andreola</p>
-                    <p>email: <a href="#">marceloandreolaa180@gmail.com</a></p>
-                </address>
-            </section>
-            <section>
-                <h2>Universidad del comahue</h2>
-                <p>Direccion: Monseñor Esandi y Ayacucho, 8500, Viedma, Río Negro, Argentina</p>
-            </section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./preguntas.html">Preguntas</a>
-                    </li>    
-                    <li>
-                        <a href="./juego_preguntas.html">Juego preguntas</a>
-                    </li>
-                    <li>
-                        <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
-                    </li>
-                    <li>
-                        <a href="./acerca_de.html">Acerca de</a>
-                    </li>
-                </ul>
-            </nav>
-            <section>
-                <p>&copy; 2024 Marcelo Andreola. Todos los derechos reservados.</p>
-            </section>
-        </footer>
-    
+    <footer>
+        <section>
+            <h2>Contacto</h2>
+            <address>
+                <p>Marcelo Andreola</p>
+                <p>email: <a href="#">marceloandreolaa180@gmail.com</a></p>
+            </address>
+        </section>
+        <section>
+            <h2>Universidad del comahue</h2>
+            <p>Direccion: Monseñor Esandi y Ayacucho, 8500, Viedma, Río Negro, Argentina</p>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./juego_preguntas.html">Preguntas</a>
+                </li>
+                <li>
+                    <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
+                </li>
+                <li>
+                    <a href="./acerca_de.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <p>&copy; 2024 Marcelo Andreola. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+    <section>
+        <a href="#" class="scroll-to-top">
+            <div class="circle">
+                <span class="arrow">&uarr;</span>
+            </div>
+        </a>
+    </section>
 
 </body>
 </html>
