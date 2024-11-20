@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Preguntas</title>
+    <title>Juego JS</title>
 </head>
 <body>
     <div class="container_principal">
@@ -15,7 +15,7 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li class="li_inicial">
-                    <a href="./juego_js.html">Juego JS</a>
+                    <a href="./preguntas.html">Preguntas</a>
                 </li>
                 <li>
                     <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
@@ -28,27 +28,39 @@
                 </li>
             </ul>
         </nav>
-            <h1 class="main_text">Preguntas</h1>
+            <h1 class="main_text">¡Juego de Piedra, Papel o Tijera!</h1>
             <img src="./img/logo_curza.jpeg" alt="imagen del curza" class="img_usuario_logo_curza">
     </header>
-    <main>
-        <section class="Enunciado">
-            <h2 class="texto_enunciado">Enunciado</h2>
-            <ol>
-                <li>Respuesta</li>
-                <li>Respuesta</li>
-                <li>Respuesta</li>
-                <li>Respuesta</li>
-            </ol>
+    <main class="main_juego">
+        <section class="section_juego">
+            <p>Selecciona una opción:</p>
+            <div class="choices">
+                <div class="choice" onclick="play('Piedra')">
+                    <img src="./img/mano_piedra.png" alt="Piedra" width="100">
+                    <p>Piedra</p>
+                </div>
+                <div class="choice" onclick="play('Papel')">
+                    <img src="./img/mano_papel.png" alt="Papel" width="100">
+                    <p>Papel</p>
+                </div>
+                <div class="choice" onclick="play('Tijera')">
+                    <img src="./img/mano_tijera.png" alt="Tijera" width="100">
+                    <p>Tijera</p>
+                </div>
+            </div>
+            <div class="images">
+                <div>
+                    <p>Tu elección:</p>
+                    <img id="userImage" src="./img/pregunta.png" alt="Tu elección" width="100">
+                </div>
+                <div>
+                    <p>Elección de la computadora:</p>
+                    <img id="computerImage" src="./img/pregunta.png" alt="Elección de la computadora" width="100">
+                </div>
+            </div>
+            <div class="result" id="result"></div>
         </section>
-        <section class="container_img">
-            <img src="./img/logo_curza_2.jpg" alt="">
-            <img src="./img/imagen_curza.jpg" alt="">
-            <img src="./img/imagen_curza_2.jpg" alt="">
-            <img src="./img/imagen_curza_3.jpg" alt="">
-        </section>
-    </main>
-    <footer>
+    </main>        <footer>
         <section>
             <h2>Contacto</h2>
             <address>
@@ -66,7 +78,7 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li class="li_inicial">
-                    <a href="./juego_js.html">Juego JS</a>
+                    <a href="./preguntas.html">Preguntas</a>
                 </li>
                 <li>
                     <a href="https://web.curza.uncoma.edu.ar/">Pagina del Curza</a>
@@ -88,6 +100,6 @@
             </div>
         </a>
     </section>
-
+    <script src="./archivo_javascript.js"></script>    
 </body>
 </html>

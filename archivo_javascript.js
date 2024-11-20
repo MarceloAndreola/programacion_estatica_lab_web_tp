@@ -46,13 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
 function toggleCV() {
-    var fullCV = document.getElementById("fullCV");
-    var button = document.querySelector("button");
+    const fullCV = document.getElementById("fullCV");
+    const button = document.querySelector(".button_leer");
 
-    if (fullCV.style.display === "none") {
+    if (fullCV.style.display === "none" || fullCV.style.display === "") {
         fullCV.style.display = "block";
         button.textContent = "Leer menos";
     } else {
@@ -62,9 +60,34 @@ function toggleCV() {
 }
 
 
+function play(userChoice) {
+    const options = ['Piedra', 'Papel', 'Tijera'];
+    const computerChoice = options[Math.floor(Math.random() * options.length)];
 
+    let resultMessage = '';
+    if (userChoice === computerChoice) {
+        resultMessage = `Empate. Ambos eligieron ${userChoice}.`;
+    } else if (
+        (userChoice === 'Piedra' && computerChoice === 'Tijera') ||
+        (userChoice === 'Papel' && computerChoice === 'Piedra') ||
+        (userChoice === 'Tijera' && computerChoice === 'Papel')
+    ) {
+        resultMessage = `¡Ganaste! Elegiste ${userChoice} y la computadora eligió ${computerChoice}.`;
+    } else {
+        resultMessage = `Perdiste. Elegiste ${userChoice} y la computadora eligió ${computerChoice}.`;
+    }
 
+    document.getElementById('result').textContent = resultMessage;
 
+    const userImagePath = `./img/mano_${userChoice.toLowerCase()}.png`;
+    const computerImagePath = `./img/mano_${computerChoice.toLowerCase()}.png`;
+
+    document.getElementById('userImage').src = userImagePath;
+    document.getElementById('computerImage').src = computerImagePath;
+
+    console.log(`Imagen de usuario: ${userImagePath}`);
+    console.log(`Imagen de computadora: ${computerImagePath}`);
+}
 
 
 
